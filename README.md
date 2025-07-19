@@ -63,3 +63,50 @@ npm install
 
 You're now ready to test!  
 Write your test scenarios in plain English and let the Copilot Agent automate your browser testing with WDIO.
+
+---
+
+## 🛠️ Available Tools
+
+| Tool           | Description                                                      |
+|----------------|------------------------------------------------------------------|
+| `openBrowser`  | Launches a new browser session.                                  |
+| `navigate`     | Navigates the browser to a specified URL.                        |
+| `clickElement` | Clicks on a specified element on the web page.                   |
+| `setValue`     | Sets the value of an input field or form element.                |
+| `getText`      | Retrieves the visible text from a specified element.             |
+| `isDisplayed`  | Checks if a specified element is currently visible on the page.  |
+| `closeBrowser` | Closes the current browser session.                              |
+
+---
+
+## 🚀 Usage Examples
+
+**Example scenario (in plain English):**
+1. Navigate to https://www.saucedemo.com/v1/index.html  
+2. Login with `standard_user` / `secret_sauce`  
+3. Add the first 2 products to the cart  
+4. Click the cart icon and go to the cart page  
+5. Verify 2 items are added and visible in the cart
+
+The Copilot Agent will translate this scenario into a sequence of tool invocations and WDIO test code.
+
+---
+
+## 📝 How It Works
+
+1. You write a test scenario in plain English.
+2. The Copilot Agent interprets your scenario and calls the appropriate tools exposed by this MCP server.
+3. The server performs real browser automation using WebdriverIO.
+4. Optionally, the agent can generate reusable WDIO test code for your scenario.
+
+---
+
+## 🧩 Extending & Customizing
+
+To add or modify tools:
+- Edit the tool definitions in your MCP server code.
+- Restart the server to expose new or updated tools.
+- Update documentation as needed.
+
+---
