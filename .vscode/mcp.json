@@ -1,0 +1,13 @@
+{
+    "servers": {
+        "wdio-mcp-server": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "tsx",
+                "C:/wdio-mcp-server/src/server.ts"
+            ]
+        }
+    }
+}

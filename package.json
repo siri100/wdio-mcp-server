@@ -1,0 +1,21 @@
+{
+  "name": "wdio-mcp-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.1",
+    "webdriverio": "^9.17.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/webdriverio": "^5.0.0"
+  }
+}
